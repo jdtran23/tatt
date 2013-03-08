@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block modals %}
+    {{ block.super }}
+{% endblock %}
+{% block content %}
+    <div id="registration">
+        {% load crispy_forms_tags %}
+        {% crispy registration_form %}
+    </div>
+{% endblock %}
